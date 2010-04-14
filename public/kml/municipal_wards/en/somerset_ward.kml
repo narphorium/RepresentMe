@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:xal="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0">
+    <Document>
+        <name>Ward 14 - Somerset</name>
+        <open>1</open>
+        <Style id="mapFill">
+            <LineStyle>
+                <color>ff35acf0</color>
+                <width>4.0</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>6f35acf0</color>
+            </PolyStyle>
+        </Style>
+        <Placemark>
+            <name>Ward 14 - Somerset</name>
+            <styleUrl>#mapFill</styleUrl>
+            <ExtendedData>
+                <Data name="freebase_topic">
+                    <displayName>Freebase Topic</displayName>
+                    <value>http://www.freebase.com/view/en/somerset_ward</value>
+                </Data>
+            </ExtendedData>
+            <Polygon>
+                <outerBoundaryIs>
+                    <LinearRing>
+                        <tessellate>1</tessellate>
+                        <coordinates>-75.704887,45.427608 -75.705276,45.425678 -75.706779,45.42380899999999 -75.722618,45.420528 -75.723427,45.42002100000001 -75.723389,45.41938 -75.722618,45.418781 -75.722229,45.41803 -75.728844,45.41716 -75.724937,45.41088899999999 -75.720337,45.408241 -75.718071,45.406429 -75.714546,45.404202 -75.71373,45.40333199999999 -75.712624,45.40239 -75.709442,45.396851 -75.703262,45.399529 -75.705803,45.40399200000001 -75.69944,45.405682 -75.696312,45.406818 -75.686348,45.411308 -75.683517,45.412312 -75.683517,45.41318100000001 -75.680428,45.417999 -75.680603,45.418598 -75.680946,45.41904799999999 -75.687431,45.421822 -75.698631,45.42664 -75.704887,45.427608</coordinates>
+                    </LinearRing>
+                </outerBoundaryIs>
+            </Polygon>
+        </Placemark>
+    </Document>
+</kml>

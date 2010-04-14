@@ -1,0 +1,12 @@
+Your <%= entry.object["representatives"][0]["role"] %> 
+<strong><%= entry.object["representatives"][0]["name"] %></strong>
+<% if entry.object["representatives"].length > 2 %>
+	<% entry.object["representatives"][1..-2].each { |representative| %>,
+		<%= representative["role"] %> <strong><%= representative["name"] %></strong>
+	<% } %>
+<% end %>
+<% if entry.object["representatives"].length > 1 %>
+	and your <%= entry.object["representatives"][-1]["role"] %> <strong><%= entry.object["representatives"][-1]["name"] %></strong>
+<% end %>
+appeared in the article: <br/>
+<%= link_to(entry.link_title, entry.link_url, :class => entry.link_class, :target => "_blank") %>

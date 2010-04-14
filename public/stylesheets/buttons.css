@@ -1,0 +1,81 @@
+a.small_grey_button {
+    background: transparent url('../images/buttons/grey_button_22.png') 100% -24px no-repeat;
+    display: block;
+    float: left;
+    font: normal 12px arial, sans-serif;
+    height: 24px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+a.small_grey_button span {
+    background: transparent url('../images/buttons/grey_button_22.png') 0 0 no-repeat;
+    display: block;
+    line-height: 20px;
+    padding: 2px 2px 2px 12px;
+    color: #444;
+    text-shadow: 0px 1px 0px #e5e5ee;
+}
+
+a.small_grey_button:hover {
+    background-position: 100% -72px;
+    color: #000;
+}
+
+a.small_grey_button:hover span {
+    background-position: 0px -48px;
+    color: #000;
+}
+
+a.small_grey_button:active {
+    background-position: 100% -120px;
+    color: #000;
+    outline: none;
+}
+
+a.small_grey_button:active span {
+    background-position: 0px -96px;
+    padding: 3px 2px 1px 12px;
+    color: #000;
+}
+
+a.small_red_button {
+    background: transparent url('../images/buttons/red_button_22.png') 100% -24px no-repeat;
+    display: block;
+    float: left;
+    font: normal 12px arial, sans-serif;
+    height: 24px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+a.small_red_button span {
+    background: transparent url('../images/buttons/red_button_22.png') 0 0 no-repeat;
+    display: block;
+    line-height: 20px;
+    padding: 2px 2px 2px 12px;
+    color: #fff;
+    text-shadow: 0px -1px 0px #600;
+}
+
+a.small_red_button:hover {
+    background-position: 100% -72px;
+    color: #fff;
+}
+
+a.small_red_button:hover span {
+    background-position: 0px -48px;
+    color: #fff;
+}
+
+a.small_red_button:active {
+    background-position: 100% -120px;
+    color: #fff;
+    outline: none;
+}
+
+a.small_red_button:active span {
+    background-position: 0px -96px;
+    padding: 3px 2px 1px 12px; 
+    color: #fff;
+}

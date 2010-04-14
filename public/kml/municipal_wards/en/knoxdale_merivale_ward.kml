@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:xal="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0">
+    <Document>
+        <name>Ward 9 - Knoxdale-Merivale</name>
+        <open>1</open>
+        <Style id="mapFill">
+            <LineStyle>
+                <color>ff35acf0</color>
+                <width>4.0</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>6f35acf0</color>
+            </PolyStyle>
+        </Style>
+        <Placemark>
+            <name>Ward 9 - Knoxdale-Merivale</name>
+            <styleUrl>#mapFill</styleUrl>
+            <ExtendedData>
+                <Data name="freebase_topic">
+                    <displayName>Freebase Topic</displayName>
+                    <value>http://www.freebase.com/view/en/knoxdale_merivale_ward</value>
+                </Data>
+            </ExtendedData>
+            <Polygon>
+                <outerBoundaryIs>
+                    <LinearRing>
+                        <tessellate>1</tessellate>
+                        <coordinates>-75.809479,45.331421 -75.806519,45.326408 -75.80587,45.324661 -75.805618,45.32037 -75.805443,45.318409 -75.804893,45.31715 -75.804031,45.315971 -75.79351,45.30299 -75.792442,45.30133100000001 -75.792313,45.29925200000001 -75.793167,45.296982 -75.795319,45.29493 -75.797462,45.29348 -75.790337,45.2962 -75.779953,45.278751 -75.75914,45.287109 -75.755661,45.288979 -75.746742,45.29261 -75.731239,45.298641 -75.725708,45.288731 -75.71386,45.29261 -75.716911,45.298729 -75.706947,45.302299 -75.707298,45.302898 -75.706177,45.303322 -75.705803,45.30260100000001 -75.69738,45.304291 -75.695541,45.308392 -75.69751,45.311859 -75.698669,45.31712 -75.696007,45.31905 -75.696228,45.32067899999999 -75.697647,45.322266 -75.700172,45.32925 -75.699097,45.330971 -75.696404,45.333832 -75.696312,45.334949 -75.699013,45.33666999999999 -75.698669,45.340199 -75.696228,45.34333 -75.701233,45.349522 -75.70153,45.351498 -75.703987,45.350929 -75.704292,45.352619 -75.706161,45.352989 -75.716476,45.37159 -75.739738,45.361431 -75.726822,45.33950000000001 -75.809479,45.331421</coordinates>
+                    </LinearRing>
+                </outerBoundaryIs>
+            </Polygon>
+        </Placemark>
+    </Document>
+</kml>

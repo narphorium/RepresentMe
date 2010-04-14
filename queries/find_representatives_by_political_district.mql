@@ -1,0 +1,28 @@
+[{
+  "id":   null,
+  "name": null,
+  "type": "/government/political_district",
+  "filter:id|=": [],
+  "representatives": {
+    "office_holder": {
+      "id":   null,
+      "name": null,
+      "party": {
+        "party": {
+          "id":   null,
+          "name": null
+        },
+        "from":     null,
+        "to":       null,
+        "sort":     "-from",
+        "optional": true,
+        "limit" : 1
+      }
+    },
+    "from":     null,
+    "to":       null,
+    "sort":     "-from",
+    "optional": true,
+    "limit": 1
+  }
+}]

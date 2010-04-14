@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document>
+        <name>Ward 15 - Kitchissippi</name>
+        <open>1</open>
+        <Style id="mapFill"> 
+	    <LineStyle> 
+	      <color>ff35acf0</color> 
+	      <colorMode>normal</colorMode> 
+	      <width>2</width> 
+	    </LineStyle> 
+	    <PolyStyle> 
+	      <color>6f35acf0</color> 
+	      <fill>1</fill> 
+	      <outline>1</outline> 
+	    </PolyStyle> 
+	  </Style> 
+        <Placemark>
+            <name>Ward 15 - Kitchissippi</name>
+            <styleUrl>#mapFill</styleUrl>
+            <ExtendedData>
+                <Data name="freebase_topic">
+                    <displayName>Freebase Topic</displayName>
+                    <value>http://www.freebase.com/view/en/kitchissippi_ward</value>
+                </Data>
+            </ExtendedData>
+            <Polygon>
+                <outerBoundaryIs>
+                    <LinearRing>
+                        <tessellate>1</tessellate>
+                        <coordinates>-75.728882,45.41706800000001 -75.734077,45.416161 -75.756218,45.411308 -75.758018,45.41046899999999 -75.759567,45.40950000000001 -75.78244,45.38639100000001 -75.773643,45.38229 -75.77047,45.380749 -75.768448,45.37960800000001 -75.767723,45.37867 -75.766823,45.377708 -75.765358,45.37728899999999 -75.763649,45.377079 -75.76223,45.37746800000001 -75.760262,45.377831 -75.758842,45.37746800000001 -75.758148,45.37704800000001 -75.75798,45.37625900000001 -75.757721,45.37608 -75.756607,45.37411899999999 -75.754631,45.370468 -75.738327,45.38525 -75.736008,45.385368 -75.709534,45.396851 -75.712883,45.40263 -75.713608,45.403389 -75.716103,45.405102 -75.718163,45.40646 -75.720222,45.408119 -75.720993,45.408539 -75.723129,45.40947 -75.724937,45.410831 -75.728882,45.41706800000001</coordinates>
+                    </LinearRing>
+                </outerBoundaryIs>
+            </Polygon>
+        </Placemark>
+    </Document>
+</kml>

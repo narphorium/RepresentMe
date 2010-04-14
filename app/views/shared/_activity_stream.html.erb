@@ -1,0 +1,17 @@
+<h2>
+	Recent Activity
+	<%= link_to(image_tag('icons/rss.png'), {:action => 'rss'}, {:class => 'rss'}) %>
+</h2>
+
+<ul id="activity_stream">
+<% for date in activity_stream.entry_dates %>
+	<li class="entry">
+		<div class="date"><%= relative_date(date) %></div>
+		<ul>
+		<% for entry in activity_stream.entries_by_date(date) %>
+			<li><%= render :partial => "shared/entry/#{entry.object.class.name.underscore.downcase}", :locals => {:entry => entry} %></li>
+		<% end %>
+		</ul>
+	</li>
+<% end %>
+</ul>

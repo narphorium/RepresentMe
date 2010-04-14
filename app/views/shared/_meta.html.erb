@@ -1,0 +1,34 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<% if @meta_description %>
+	<meta name="description" content="<%= @meta_description %>" />
+<% end %>
+
+<% if @meta_keywords %>
+	<meta name="keywords" content="<%= @meta_keywords.join(', ') %>" />
+<% end %>
+
+<title><%= @title %></title>
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+<% bundle :name => "main" do %>
+	<%= stylesheet_link_tag 'main',
+							'menu',
+							'buttons',
+							'favicons',
+							'status_messages',
+							'activity_stream',
+							'weblinks'
+	%>
+	<%= javascript_include_tag  'jquery-1.4.2',
+								'jquery.validate',
+								'jquery.default-value'  %>
+<% end %>
+
+<% bundle :name => params[:controller] do %>
+	<%= stylesheet_link_tag params[:controller] %>
+<% end %>
+
+<%= yield :page_header %>

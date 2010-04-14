@@ -1,0 +1,16 @@
+xml.instruct! :xml, :version=>"1.0" 
+xml.rss(:version=>"2.0"){
+  xml.channel{
+    xml.title(@title)
+    xml.link(url_for(:action => "view", :id => @location.key, :only_path => false))
+    xml.language('en-us')
+      for entry in @activity_stream.entries
+        xml.item do
+          xml.title(entry.link_title)
+          xml.description(render(:partial => "shared/entry/#{entry.object.class.name.underscore.downcase}", :locals => {:entry => entry}))
+          xml.pubDate(entry.date.strftime("%a, %d %b %Y %H:%M:%S %z"))
+          xml.link(entry.link_url)
+        end
+      end
+  }
+}

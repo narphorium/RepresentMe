@@ -1,0 +1,20 @@
+xml.instruct!
+
+xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
+
+  xml.title   @title
+  xml.link    "rel" => "self", "href" => url_for(:only_path => false, :controller => 'news', :action => 'atom', :id => @location.key)
+  xml.link    "rel" => "alternate", "href" => url_for(:only_path => false, :controller => 'news', :action => 'view', :id => @location.key)
+
+  @activity_stream.entries.each do |entry|
+    xml.entry do
+      xml.title   entry.link_title
+      xml.link    "rel" => "alternate", "href" => entry.link_url
+      xml.updated entry.date.strftime("%Y-%m-%dT%H:%M:%SZ")
+      xml.content "type" => "html" do
+        xml.text! render(:partial => "shared/entry/#{entry.object.class.name.underscore.downcase}", :locals => {:entry => entry})
+      end
+    end
+  end
+
+end

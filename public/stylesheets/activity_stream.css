@@ -1,0 +1,43 @@
+#activity_stream {
+	width: 620px;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+#activity_stream .entry {
+	border-bottom: 1px dotted #ccc;
+	margin: 10px 0;
+	padding: 5px 0;
+}
+
+#activity_stream .entry .date {
+	float: left;
+	width: 80px;
+	color: #666;
+	font-size: 9pt;
+	text-align: right;
+	vertical-align: top;
+	padding: 15px 20px 15px 0;
+}
+
+#activity_stream .entry ul {
+	margin: 0 0 0 100px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+#activity_stream .entry li {
+	margin: 10px 0;
+	padding: 0px;
+}
+
+#activity_stream a.yes_vote {
+	background: url(../images/icons/yes_vote.png) no-repeat;
+	padding: 0 0 0 20px;
+}
+
+#activity_stream a.no_vote {
+	background: url(../images/icons/no_vote.png) no-repeat;
+	padding: 0 0 0 20px;
+}

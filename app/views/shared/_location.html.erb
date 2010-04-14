@@ -1,0 +1,7 @@
+<% if @location %>
+	<div id="location">
+		<strong><%= @location.name %></strong> 
+		<%= link_to('<span>Change location</span>', {:action => :change_location}, {:class => "small_grey_button"}) %>
+		<div class="clear"></div>
+	</div>
+<% end %>

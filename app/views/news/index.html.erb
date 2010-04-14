@@ -1,0 +1,41 @@
+<% content_for :page_header do %>
+	<% bundle :name => "index" do %>
+		<%= stylesheet_link_tag "index" %>
+	<% end %>
+<% end %>
+
+<div id="left_column">
+	<p style="margin:0">Want to know how your elected representatives are acting on your behalf? 
+	<strong>RepresentMe</strong> helps you find out who's representing you and what they've done lately.</p>
+	<p>Just enter your postal code and we'll figure out the rest!</p>
+</div>
+<div id="right_column">
+
+<form id="search_form" method="GET" action="news/find">
+	<label class="bold">Postal code:</label>
+	<input type="text" name="postal_code" value="<%= params[:postal_code] %>" class="postal_code" style="width:100px" />
+	<div class="clear"></div>
+	<input type="checkbox" name="save" checked="true" style="margin:10px 0"/> <label>Remember this choice.</label>
+	<div class="clear"></div>
+	<%= render :partial => 'shared/messages' %>
+	<%= link_to('<span>Enter</span>', "javascript:$('#search_form').submit();", {:class => "small_red_button"}) %>
+</form>
+
+</div>
+<div class="clear"></div>
+
+<script>
+$(document).ready(function() {
+	$.validator.addMethod("postal_code", function(value) {
+        return value.match(/^[a-zA-Z][0-9][a-zA-Z](-| )?[0-9][a-zA-Z][0-9]$/); 
+	}, 'Not a valid postal code');
+	$("#search_form").validate({
+		rules: {
+			postal_code: {
+				required: true,
+				postal_code: true
+			}
+		}
+	});
+});
+</script>

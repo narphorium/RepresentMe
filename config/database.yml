@@ -1,0 +1,23 @@
+development:
+  adapter: mysql
+  encoding: utf8
+  database: representme
+  username: representme_user
+  password: authenticateme
+  host: localhost
+
+test:
+  adapter: mysql
+  encoding: utf8
+  database: representme_test
+  username: representme_user
+  password: authenticateme
+  host: localhost
+
+production:
+  adapter: mysql
+  encoding: utf8
+  database: representme
+  username: representme_user
+  password: authenticateme
+  host: localhost

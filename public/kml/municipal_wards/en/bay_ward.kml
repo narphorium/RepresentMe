@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:xal="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0">
+    <Document>
+        <name>Ward 7 - Bay</name>
+        <open>1</open>
+        <Style id="mapFill">
+            <LineStyle>
+                <color>ff35acf0</color>
+                <width>4.0</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>6f35acf0</color>
+            </PolyStyle>
+        </Style>
+        <Placemark>
+            <name>Ward 7 - Bay</name>
+            <styleUrl>#mapFill</styleUrl>
+            <ExtendedData>
+                <Data name="freebase_topic">
+                    <displayName>Freebase Topic</displayName>
+                    <value>http://www.freebase.com/view/en/bay_ward</value>
+                </Data>
+            </ExtendedData>
+            <Polygon>
+                <outerBoundaryIs>
+                    <LinearRing>
+                        <tessellate>1</tessellate>
+                        <coordinates>-75.771072,45.38111900000001 -75.78244,45.38636 -75.785492,45.38356 -75.787643,45.38204999999999 -75.794502,45.378551 -75.810944,45.37400099999999 -75.820679,45.372952 -75.830681,45.37286 -75.83506,45.37376 -75.840981,45.37608 -75.867332,45.38829 -75.888443,45.398479 -75.899773,45.404079 -75.905273,45.40752 -75.90741,45.409168 -75.945686,45.38410199999999 -75.904358,45.351601 -75.893639,45.333229 -75.892647,45.331299 -75.885872,45.32043800000001 -75.855362,45.33284 -75.83712,45.340199 -75.824463,45.342731 -75.816994,45.34320799999999 -75.809311,45.345169 -75.796898,45.346321 -75.793167,45.34771 -75.759354,45.36606999999999 -75.754631,45.37044100000001 -75.757591,45.3759 -75.75798,45.37632000000001 -75.758202,45.377079 -75.758751,45.37746800000001 -75.76004,45.37779999999999 -75.761162,45.377651 -75.763168,45.377079 -75.764328,45.377079 -75.76545,45.37728899999999 -75.766563,45.37759 -75.767212,45.37801 -75.767891,45.378819 -75.76841,45.37952000000001 -75.769096,45.38005799999999 -75.771072,45.38111900000001</coordinates>
+                    </LinearRing>
+                </outerBoundaryIs>
+            </Polygon>
+        </Placemark>
+    </Document>
+</kml>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:xal="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0">
+    <Document>
+        <name>Ward 4 - Kanata-North</name>
+        <open>1</open>
+        <Style id="mapFill">
+            <LineStyle>
+                <color>ff35acf0</color>
+                <width>4.0</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>6f35acf0</color>
+            </PolyStyle>
+        </Style>
+        <Placemark>
+            <name>Ward 4 - Kanata-North</name>
+            <styleUrl>#mapFill</styleUrl>
+            <ExtendedData>
+                <Data name="freebase_topic">
+                    <displayName>Freebase Topic</displayName>
+                    <value>http://www.freebase.com/view/en/kanata_north_ward</value>
+                </Data>
+            </ExtendedData>
+            <Polygon>
+                <outerBoundaryIs>
+                    <LinearRing>
+                        <tessellate>1</tessellate>
+                        <coordinates>-75.885948,45.32037 -75.893806,45.33353 -75.904488,45.35163100000001 -75.907204,45.353771 -75.922729,45.366009 -75.927094,45.363003 -75.929321,45.36541400000001 -75.951576,45.350216 -75.940109,45.341579 -75.946938,45.33778 -75.948479,45.335609 -75.948997,45.33332099999999 -75.94883,45.327412 -75.944023,45.32004500000001 -75.941704,45.316425 -75.938606,45.31430799999999 -75.928139,45.30987200000001 -75.92231,45.30960499999999 -75.927238,45.307758 -75.937622,45.311588 -75.944397,45.30787999999999 -75.940971,45.30512999999999 -75.959427,45.2943 -75.948273,45.286812 -75.929771,45.298458 -75.923813,45.30091100000001 -75.913979,45.30453099999999 -75.910461,45.306278 -75.895912,45.31509 -75.885948,45.32037</coordinates>
+                    </LinearRing>
+                </outerBoundaryIs>
+            </Polygon>
+        </Placemark>
+    </Document>
+</kml>

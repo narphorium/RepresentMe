@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:xal="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0">
+    <Document>
+        <name>Ward 17 - Capital</name>
+        <open>1</open>
+        <Style id="mapFill">
+            <LineStyle>
+                <color>ff35acf0</color>
+                <width>4.0</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>6f35acf0</color>
+            </PolyStyle>
+        </Style>
+        <Placemark>
+            <name>Ward 17 - Capital</name>
+            <styleUrl>#mapFill</styleUrl>
+            <ExtendedData>
+                <Data name="freebase_topic">
+                    <displayName>Freebase Topic</displayName>
+                    <value>http://www.freebase.com/view/en/capital_ward</value>
+                </Data>
+            </ExtendedData>
+            <Polygon>
+                <outerBoundaryIs>
+                    <LinearRing>
+                        <tessellate>1</tessellate>
+                        <coordinates>-75.679871,45.419022 -75.680649,45.418869 -75.680481,45.418179 -75.683517,45.413239 -75.683517,45.41246 -75.691887,45.408932 -75.69532,45.407211 -75.700562,45.405411 -75.705879,45.404018 -75.703217,45.39959 -75.709442,45.39691199999999 -75.706268,45.393559 -75.701027,45.391499 -75.700043,45.38525 -75.702148,45.38096999999999 -75.701698,45.377769 -75.702362,45.375481 -75.699921,45.37566 -75.699661,45.379398 -75.696953,45.381241 -75.688972,45.383469 -75.683739,45.376202 -75.666397,45.369061 -75.663177,45.37044100000001 -75.668716,45.380779 -75.677605,45.389622 -75.67099,45.39959 -75.666138,45.39896 -75.66185,45.40726900000001 -75.66082,45.40935099999999 -75.660217,45.412491 -75.660004,45.41389800000001 -75.659363,45.414501 -75.65876,45.414902 -75.658028,45.41522999999999 -75.656868,45.415352 -75.656609,45.416279 -75.65657,45.417728 -75.65876,45.41748800000001 -75.662621,45.416882 -75.667213,45.417042 -75.669746,45.417309 -75.672058,45.41706800000001 -75.673477,45.416489 -75.676178,45.41785 -75.677467,45.418388 -75.679871,45.419022</coordinates>
+                    </LinearRing>
+                </outerBoundaryIs>
+            </Polygon>
+        </Placemark>
+    </Document>
+</kml>

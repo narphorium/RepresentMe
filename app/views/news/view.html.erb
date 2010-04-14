@@ -1,0 +1,67 @@
+<% content_for :page_header do %>
+		<%= auto_discovery_link_tag(:rss, {:action => 'rss'}, {:title => "Activity Stream (RSS)"}) %>
+		<%= auto_discovery_link_tag(:atom, {:action => 'atom'}, {:title => "Activity Stream (Atom)"}) %>
+		<%= GMap.header %>
+		<% bundle :name => "news_view" do %>
+			<%= javascript_include_tag "google_maps" %>
+		<% end %>
+<% end %>
+
+<div id="columns">
+
+<div id="left_column">
+	
+	<table id="representatives">
+		<tr>
+			<th>You live in...</th>
+			<th>represented by...</th>
+			<th>as your...</th>
+		</tr>
+		<% if @districts[@location.municipal_ward]["representatives"] %>
+		<tr>
+			<td><%= @districts[@location.municipal_ward]["name"] %></td>
+			<td><%= @districts[@location.municipal_ward]["representatives"]["office_holder"]["name"] %></td>
+			<td><%= @districts[@location.municipal_ward]["representatives"]["office_holder"]["role"] %></td>
+		</tr>
+		<% end %>
+		<% if @districts[@location.provincial_riding]["representatives"] %>
+		<tr>
+			<td><%= @districts[@location.provincial_riding]["name"] %></td>
+			<td><%= @districts[@location.provincial_riding]["representatives"]["office_holder"]["name"] %></td>
+			<td><%= @districts[@location.provincial_riding]["representatives"]["office_holder"]["role"] %></td>
+			
+		</tr>
+		<% end %>
+		<% if @districts[@location.federal_riding]["representatives"] %>
+		<tr>
+			<td><%= @districts[@location.federal_riding]["name"] %></td>
+			<td><%= @districts[@location.federal_riding]["representatives"]["office_holder"]["name"] %></td>
+			<td><%= @districts[@location.federal_riding]["representatives"]["office_holder"]["role"] %></td>
+		</tr>
+		<% end %>
+	</table>
+
+	<%= render :partial => 'shared/activity_stream', :object => @activity_stream %>
+
+</div>
+
+<div id="right_column">
+	
+	<div class="map">
+		<div id="map1" style="width: 309px;height: 270px;"></div>
+		<p><%= @districts[@location.municipal_ward]["name"] %></p>
+	</div>
+	<div class="map">
+		<div id="map2" style="width: 309px;height: 270px;"></div>
+		<p><%= @districts[@location.provincial_riding]["name"] %></p>
+	</div>
+</div>
+
+</div>
+
+<div class="clear"></div>
+ 
+<script type="text/javascript">
+	loadMap('map1', 'http://representme.ca/kml/municipal_wards<%= @location.municipal_ward %>.kml', <%= @location.latitude %>, <%= @location.longitude %>);
+	loadMap('map2', 'http://representme.ca/kml/provincial_ridings<%= @location.provincial_riding %>.kml', <%= @location.latitude %>, <%= @location.longitude %>);
+</script> 

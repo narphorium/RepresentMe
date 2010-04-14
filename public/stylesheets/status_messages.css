@@ -1,0 +1,102 @@
+/*****[ COMMON ]*****/
+
+.flash_error,
+.flash_warning,
+.flash_message,
+.flash_success
+{
+  background-repeat: no-repeat;
+  padding: 4px 0px 0px 0px;
+  margin: 0 0 10px 0;
+}
+
+.flash_error .inner,
+.flash_warning .inner,
+.flash_message .inner,
+.flash_success .inner
+{
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding: 2px 6px 6px 0px;
+}
+
+.flash_error p,
+.flash_warning p,
+.flash_message p,
+.flash_success p
+{
+  margin: 0px;
+  padding: 0px 0px 0px 24px;
+  background-repeat: no-repeat;
+}
+
+.flash_error .close,
+.flash_warning .close,
+.flash_message .close,
+.flash_success .close
+{
+  position: absolute;
+  top: 4px;
+  right: 8px;
+}
+
+/*****[ ERROR ]*****/
+
+.flash_error {
+  
+}
+
+.flash_error .inner {
+  color: #c00;
+  
+}
+
+.flash_error p {
+  background-image: url(../images/icons/error.png);
+}
+
+/*****[ WARNING ]*****/
+
+.flash_warning {
+  
+}
+
+.flash_warning .inner {
+  color: #666;
+  font-style: italic;
+}
+
+.flash_warning p {
+  background-image: url(../images/icons/notice.png);
+}
+
+/*****[ MESSAGE ]*****/
+
+.flash_message {
+  
+}
+
+.flash_message .inner {
+  color: #000;
+  
+}
+
+.flash_message p {
+  background-image: url(../images/icons/message.png);
+}
+
+/*****[ SUCCESS ]*****/
+
+.flash_success {
+  
+}
+
+.flash_success .inner {
+  color: #090;
+  
+}
+
+.flash_success p {
+  background-image: url(../images/icons/success.png);
+}

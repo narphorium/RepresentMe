@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:xal="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0">
+    <Document>
+        <name>Ward 1 - Orleans</name>
+        <open>1</open>
+        <Style id="mapFill">
+            <LineStyle>
+                <color>ff35acf0</color>
+                <width>4.0</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>6f35acf0</color>
+            </PolyStyle>
+        </Style>
+        <Placemark>
+            <name>Ward 1 - Orleans</name>
+            <styleUrl>#mapFill</styleUrl>
+            <ExtendedData>
+                <Data name="freebase_topic">
+                    <displayName>Freebase Topic</displayName>
+                    <value>http://www.freebase.com/view/en/orleans_ward</value>
+                </Data>
+            </ExtendedData>
+            <Polygon>
+                <outerBoundaryIs>
+                    <LinearRing>
+                        <tessellate>1</tessellate>
+                        <coordinates>-75.48027,45.51115 -75.562752,45.481361 -75.550652,45.46109 -75.54747,45.46168099999999 -75.54258,45.4632 -75.516151,45.475891 -75.508003,45.46133 -75.498734,45.463741 -75.49324,45.467232 -75.491951,45.46759 -75.490219,45.468121 -75.483101,45.469391 -75.480881,45.470421 -75.478821,45.47192 -75.478119,45.47378199999999 -75.478394,45.47596 -75.479919,45.47794 -75.47683,45.47987000000001 -75.476242,45.48222 -75.47538,45.48336 -75.47451,45.48378 -75.462082,45.475842 -75.458382,45.475052 -75.454353,45.470661 -75.439552,45.474518 -75.444221,45.47596 -75.455132,45.480591 -75.459671,45.481071 -75.464561,45.48458099999999 -75.466881,45.48444 -75.469879,45.48595 -75.470581,45.491421 -75.471863,45.494541 -75.473923,45.494781 -75.473999,45.49629999999999 -75.476501,45.498871 -75.475891,45.50045 -75.474861,45.50111 -75.475121,45.50183100000001 -75.473412,45.503151 -75.48027,45.51115</coordinates>
+                    </LinearRing>
+                </outerBoundaryIs>
+            </Polygon>
+        </Placemark>
+    </Document>
+</kml>

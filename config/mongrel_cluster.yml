@@ -1,0 +1,8 @@
+--- 
+user: narphorium
+log_file: log/mongrel.log
+port: "40820"
+environment: production
+group: narphorium
+pid_file: tmp/pids/mongrel.pid
+servers: 1

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:xal="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0">
+    <Document>
+        <name>Ward 18 - Alta Vista</name>
+        <open>1</open>
+        <Style id="mapFill">
+            <LineStyle>
+                <color>ff35acf0</color>
+                <width>4.0</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>6f35acf0</color>
+            </PolyStyle>
+        </Style>
+        <Placemark>
+            <name>Ward 18 - Alta Vista</name>
+            <styleUrl>#mapFill</styleUrl>
+            <ExtendedData>
+                <Data name="freebase_topic">
+                    <displayName>Freebase Topic</displayName>
+                    <value>http://www.freebase.com/view/en/alta_vista_ward</value>
+                </Data>
+            </ExtendedData>
+            <Polygon>
+                <outerBoundaryIs>
+                    <LinearRing>
+                        <tessellate>1</tessellate>
+                        <coordinates>-75.656609,45.417671 -75.656609,45.416611 -75.656914,45.41547 -75.658852,45.41502 -75.659828,45.414051 -75.660217,45.41318100000001 -75.66082,45.40974 -75.6661,45.39905200000001 -75.670952,45.39965100000001 -75.677605,45.389648 -75.668716,45.380871 -75.663177,45.370468 -75.607483,45.392845 -75.601471,45.39498099999999 -75.59301,45.398232 -75.593918,45.401131 -75.597908,45.406399 -75.598343,45.40797 -75.600143,45.411098 -75.601936,45.41206 -75.61409,45.41149100000001 -75.616096,45.41502 -75.629227,45.416821 -75.631638,45.416729 -75.63224,45.41758 -75.632881,45.41754900000001 -75.6343,45.42038 -75.649063,45.41935 -75.651772,45.419079 -75.653221,45.418869 -75.655838,45.417728 -75.656609,45.417671</coordinates>
+                    </LinearRing>
+                </outerBoundaryIs>
+            </Polygon>
+        </Placemark>
+    </Document>
+</kml>

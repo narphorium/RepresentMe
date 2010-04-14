@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:xal="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0">
+    <Document>
+        <name>Ward 23 - Kanata South</name>
+        <open>1</open>
+        <Style id="mapFill">
+            <LineStyle>
+                <color>ff35acf0</color>
+                <width>4.0</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>6f35acf0</color>
+            </PolyStyle>
+        </Style>
+        <Placemark>
+            <name>Ward 23 - Kanata South</name>
+            <styleUrl>#mapFill</styleUrl>
+            <ExtendedData>
+                <Data name="freebase_topic">
+                    <displayName>Freebase Topic</displayName>
+                    <value>http://www.freebase.com/view/en/kanata_south_ward</value>
+                </Data>
+            </ExtendedData>
+            <Polygon>
+                <outerBoundaryIs>
+                    <LinearRing>
+                        <tessellate>1</tessellate>
+                        <coordinates>-75.878792,45.30773199999999 -75.885948,45.32037 -75.88858,45.31929 -75.89183,45.317478 -75.895477,45.315269 -75.898102,45.31376999999999 -75.904243,45.30998999999999 -75.909508,45.30685 -75.91394,45.304562 -75.922394,45.301418 -75.921181,45.29982 -75.918831,45.29895 -75.917633,45.29771 -75.916382,45.297798 -75.91217,45.296349 -75.91021,45.29538 -75.900238,45.290791 -75.8936,45.28876900000001 -75.882523,45.28204 -75.879181,45.283642 -75.868568,45.27491 -75.862091,45.269749 -75.859734,45.268902 -75.857239,45.268749 -75.852142,45.27067900000001 -75.835274,45.277451 -75.83548,45.277931 -75.837669,45.28141 -75.838188,45.28294000000001 -75.843208,45.291069 -75.843979,45.290852 -75.850891,45.29847 -75.85141,45.298309 -75.851624,45.300121 -75.85347,45.301182 -75.853943,45.30344 -75.855049,45.304352 -75.873161,45.297588 -75.878792,45.30773199999999</coordinates>
+                    </LinearRing>
+                </outerBoundaryIs>
+            </Polygon>
+        </Placemark>
+    </Document>
+</kml>

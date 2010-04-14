@@ -1,0 +1,5 @@
+Your <%= entry.object["representative"]["role"] %> 
+<strong><%= entry.object["representative"]["name"] %></strong> 
+voted <strong><%= entry.object.choice == "Y" ? "Yes" : "No" %></strong> 
+on the <%= entry.object.vote_type.downcase %> of:<br/>
+<%= link_to(entry.link_title, entry.link_url, :class => entry.link_class, :target => "_blank") %>

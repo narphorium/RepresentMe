@@ -1,0 +1,68 @@
+#weblinks ul,
+#email_addresses ul {
+	margin: 26px 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#weblinks ul li,
+#email_addresses ul li {
+	margin: 6px 0;
+	font-size: 10pt;
+}
+
+.weblink {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	padding: 0 0 0 20px;
+}
+
+.homepage {
+	background-image: url(../images/icons/website.png);
+}
+
+.blog {
+	background-image: url(../images/icons/blog.png);
+}
+
+.twitter {
+	background-image: url(../images/icons/twitter.gif);
+}
+
+.facebook {
+	background-image: url(../images/icons/facebook.png);
+}
+
+.linkedin {
+	background-image: url(../images/icons/linkedin.gif);
+}
+
+.myspace {
+	background-image: url(../images/icons/myspace.png);
+}
+
+.email {
+	background-image: url(../images/icons/email.png);
+}
+
+#weblinks a,
+#weblinks a:visited {
+	color: #333;
+	text-shadow: 0px 1px 0px #eee;
+	text-decoration: none;
+}
+
+#weblinks a:hover {
+	color: #08c;
+}
+
+#email_addresses a,
+#email_addresses a:visited {
+	color: #333;
+	text-shadow: 0px 1px 0px #eee;
+	text-decoration: none;
+}
+
+#email_addresses a:hover {
+	color: #08c;
+}
